@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1376.0" style="-fx-background-color: white;" styleClass="stack" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Authentification">
+   <children>
+      <StackPane fx:id="stack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="974.0" stylesheets="@../CSS/Acceuil.css">
+         <children>
+            <AnchorPane fx:id="layer1" focusTraversable="true" prefHeight="532.0" prefWidth="959.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane fx:id="layer2" focusTraversable="true" layoutX="18.0" layoutY="7.0" prefHeight="513.0" prefWidth="410.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="anch" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="597.0" AnchorPane.topAnchor="7.0">
+                     <children>
+                        <Label fx:id="b3" layoutX="80.0" layoutY="246.0" text="modifier votre mot de passe." textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="d1" layoutX="14.0" layoutY="188.0" opacity="0.56" prefHeight="35.0" prefWidth="255.0" text=" UNITED EXPRESS VOYAGE" textFill="WHITE">
+                           <font>
+                              <Font name="Mistral" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="b1" layoutX="95.0" layoutY="182.0" text="MOT DE PASSE OUBLIE ?" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="b2" layoutX="54.0" layoutY="215.0" text="Ici vous pouvez suivre les differentes etapes pour " textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="secon" layoutX="116.0" layoutY="329.0" onMouseClicked="#seconnecter" prefHeight="36.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" text="SE CONNECTER" textFill="WHITE" />
+                        <Label fx:id="d3" layoutX="85.0" layoutY="219.0" opacity="0.56" prefHeight="31.0" prefWidth="174.0" text="Nous roulons vers le futur" textFill="WHITE">
+                           <font>
+                              <Font name="Mistral" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="d2" layoutX="283.0" layoutY="179.0">
+                           <image>
+                              <Image url="@../../../../Pictures/images%20java/bus_48px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="layer3" layoutX="452.0" layoutY="7.0" prefHeight="513.0" prefWidth="468.0">
+                     <children>
+                        <JFXButton fx:id="connexion" layoutX="199.0" layoutY="444.0" onAction="#connexion" onMouseClicked="#connexion" prefHeight="36.0" prefWidth="111.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="dip" text="CONNEXION" textFill="WHITE" />
+                        <TextField fx:id="nom" layoutX="101.0" layoutY="232.0" prefHeight="25.0" prefWidth="307.0" promptText="Nomutilisateur" />
+                        <ComboBox fx:id="poste" layoutX="101.0" layoutY="344.0" prefHeight="25.0" prefWidth="307.0" promptText="Poste" />
+                        <JFXButton fx:id="oublie" layoutX="168.0" layoutY="388.0" onMouseClicked="#oublie" prefHeight="25.0" prefWidth="174.0" styleClass="mdp" text="Mot de passe oublié ?">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="PINK" />
+                                    <Stop color="BLUE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </JFXButton>
+                        <Label fx:id="d4" layoutX="116.0" layoutY="48.0" text="Connectez vous a United Express Voyage">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" layoutX="101.0" layoutY="291.0" prefHeight="25.0" prefWidth="307.0" promptText="Motdepasse" />
+                        <Label fx:id="b4" layoutX="119.0" layoutY="48.0" text="Etapes pour changer son mot de passe">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <MaterialDesignIconView fx:id="d5" fill="#ba68c8" glyphName="ACCOUNT_CIRCLE" layoutX="215.0" layoutY="184.0" size="80" styleClass="button" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

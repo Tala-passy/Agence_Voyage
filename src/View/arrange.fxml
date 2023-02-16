@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gestionT" minHeight="0.0" minWidth="0.0" prefHeight="663.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.arrange">
+   <children>
+      <TableView fx:id="tabTick" layoutX="314.0" layoutY="203.0" prefHeight="343.0" prefWidth="508.0" styleClass="tableview">
+         <columns>
+            <TableColumn fx:id="Nom" prefWidth="75.0" text="Nom " />
+            <TableColumn fx:id="prix" prefWidth="61.0" text="Prix" />
+            <TableColumn fx:id="categorie" prefWidth="74.0" text="Categorie" />
+            <TableColumn fx:id="destination" prefWidth="74.0" text="Destination" />
+            <TableColumn fx:id="dateE" prefWidth="134.0" text="Date enregistrement" />
+            <TableColumn fx:id="Hdep" prefWidth="88.0" text="Heure  depart" />
+         </columns>
+      </TableView>
+      <TextField fx:id="numticket1" layoutX="703.0" layoutY="63.0" onMouseClicked="#change" prefHeight="25.0" prefWidth="199.0" promptText="            Recherche" styleClass="rec" />
+      <JFXButton fx:id="afficher1" buttonType="RAISED" layoutX="329.0" layoutY="89.0" onAction="#Afficher" prefHeight="62.0" prefWidth="131.0" styleClass="tb" text="              Actualiser">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Icons525View glyphName="SEARCH" layoutX="335.0" layoutY="142.0" size="48" styleClass="ico" />
+      <JFXButton fx:id="retour" buttonType="RAISED" layoutX="457.0" layoutY="575.0" onAction="#retour" prefHeight="62.0" prefWidth="131.0" styleClass="tb" text=" Retour        ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="BACKWARD" layoutX="537.0" layoutY="622.0" size="48" styleClass="ico" />
+      <OctIconView fx:id="searchicon" glyphName="SEARCH" layoutX="880.0" layoutY="80.0" opacity="0.39" size="15" />
+      <FontAwesomeIconView fx:id="crossicon" disable="true" glyphName="CLOSE" layoutX="882.0" layoutY="80.0" opacity="0.37" size="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <Label layoutX="403.0" layoutY="8.0" text="GESTION TICKETS">
+         <font>
+            <Font name="Mistral" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="339.0" layoutY="45.0" prefHeight="4.0" prefWidth="285.0" styleClass="org" />
+   </children>
+</AnchorPane>

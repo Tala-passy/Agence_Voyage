@@ -1,0 +1,160 @@
+.ico{
+	-fx-fill:white;
+}
+.but:hover{
+	-fx-focus-traversable:true ;
+	-fx-background-color:#ce93d8;
+	-fx-cursor:hand ;
+	}
+.dip{
+	-fx-background-color: #FFF47F;
+	-fx-background-radius:20;
+	-fx-border-radius:20;
+}
+.button{
+	-fx-text-fill: white;
+	-fx-background-color: #ce93d8;
+	
+}
+
+
+.mdp{
+	-fx-text-fill: black;
+	-fx-background-color:transparent;
+}
+.pan{
+	-fx-background-radius:50 20 0 0;
+	-fx-border-radius:50 0 0 0;
+	-fx-background-color: #FFF;
+}
+.pann{
+	-fx-background-radius:20 50 0 0;
+	-fx-border-radius:0 50 0 0;
+	-fx-background-color: #FFF47F;
+}
+
+.rad{
+	-fx-border-width: 2px;
+	}
+.anch{
+	-fx-background-color:  #ba68c8;
+}
+.anc{
+	-fx-background-color:#ffffff;
+}
+.org{
+	-fx-background-color: #ba68c8;
+}
+.yel{
+	-fx-background-color: #ce93d8;
+}
+.tb{
+	
+	-fx-background-radius:10;
+	-fx-border-radius:10;
+
+}
+.cb{
+	-fx-border-color:black;
+	-fx-background-radius:100;
+	-fx-border-radius:100;
+	-fx-border-width:2;
+	-fx-background-color:transparent;
+}
+.rec{
+	
+	-fx-background-radius:100;
+	-fx-border-radius:100;
+	-fx-border-width:2;
+}
+.tableview{
+	-fx-background-color:transparent;
+}
+.table-view {
+    -fx-background-color:#FFFFFF;
+    }
+.table-view .column-header-background{
+        -fx-background-color: #FAC038;
+        -fx-background-insets: 0 0 10 0;           
+    }
+    
+    
+.table-view .column-header{
+    -fx-background-color:   #ba68c8;
+    -fx-size:50px;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: black;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER;
+}
+
+.table-row-cell:selected, .table-row-cell:selected .text{
+    -fx-background-color:   #ba68c8;
+    -fx-fill : black ;
+ }
+
+ .table-row-cell{
+ 	-fx-background-color:#FFFFFF;
+ 	
+ }
+.table-cell{
+	 -fx-text-fill: black;
+	  -fx-fill : black ;
+	  -fx-alignment: CENTER;
+}
+.table-cell:odd{
+-fx-background-color: #e1bee7;	
+}
+.listview{
+-fx-background-color: #e1bee7;
+}
+
+.list-cell:odd{
+	-fx-background-color: #e1bee7;
+	-fx-effect:dropshadow(gaussian,#ba68c8);
+}
+/* .list-cell:filled:hover{
+	-fx-background-color: #ce93d8;
+	 -fx-text-fill: white;
+}*/
+.list:selected{
+	-fx-effect:dropshadow(gaussian,#ba68c8);
+}
+.list-cell:selected{
+	 -fx-background-color:   #ba68c8;
+	
+}
+.list:last-child{
+	-fx-background-radius:0 0 20 20;
+	
+	-fx-border-radius:0 0 20 20 ;
+}
+.tab .tab-label 
+{
+-fx-skin: "com.sun.javafx.scene.control.skin.LabelSkin";
+-fx-background-color: transparent;    
+-fx-alignment: CENTER;
+-fx-text-fill: -fx-text-base-color;
+}
+
+.tab 
+{
+
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-padding: 0.083333em 0.5em 0.083333em 0.5em; 
+-fx-background-color:transparent;
+}
+.tab:focus{
+	-fx-background-color: #ba68c8;
+}
+ .tab-header-background{
+	-fx-background-color:  white;
+}
+.jfx-tab-pane:top .depth-container .tab-header-area .headers-region .tab-selected-line{
+	-fx-background-color: #ba68c8;
+}
+
+

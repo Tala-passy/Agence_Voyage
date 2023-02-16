@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.validation.NumberValidator?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="482.0" styleClass="anc" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierTicketController">
+   <children>
+      <Pane disable="true" layoutX="119.0" layoutY="234.0" prefHeight="250.0" prefWidth="250.0" rotate="45.0" styleClass="org">
+         <children>
+            <Pane layoutX="15.0" layoutY="15.0" prefHeight="222.0" prefWidth="222.0" styleClass="yel">
+               <children>
+                  <Pane layoutX="27.0" layoutY="29.0" prefHeight="170.0" prefWidth="170.0" styleClass="org" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <HBox layoutX="-7.0" layoutY="-1.0" prefHeight="90.0" prefWidth="497.0" styleClass="anch" />
+      <JFXButton fx:id="enreg" buttonType="RAISED" contentDisplay="TOP" layoutX="300.0" layoutY="611.0" onAction="#EnregitrerTicket" prefHeight="55.0" prefWidth="147.0" styleClass="tb" text="          Enregistrer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="effacer" buttonType="RAISED" layoutX="57.0" layoutY="618.0" onAction="#Effacer" prefHeight="48.0" prefWidth="123.0" styleClass="tb" text="           Effacer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="57.0" layoutY="21.0" prefHeight="45.0" prefWidth="328.0" text="Modification d'un  ticket">
+         <font>
+            <Font name="Mistral" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="64.0" layoutX="395.0" layoutY="11.0">
+         <image>
+            <Image url="@../../../../Pictures/images%20java/bus_tickets_80px.png" />
+         </image>
+      </ImageView>
+      <MaterialDesignIconView glyphName="BACKSPACE" layoutX="64.0" layoutY="660.0" size="48" styleClass="ico" />
+      <FontAwesomeIconView glyphName="SAVE" layoutX="317.0" layoutY="657.0" size="48" styleClass="ico" />
+      <Pane disable="true" layoutX="120.0" layoutY="237.0" prefHeight="250.0" prefWidth="250.0" styleClass="org">
+         <children>
+            <Pane layoutX="15.0" layoutY="15.0" prefHeight="222.0" prefWidth="222.0" styleClass="yel">
+               <children>
+                  <Pane layoutX="27.0" layoutY="29.0" prefHeight="170.0" prefWidth="170.0" styleClass="org" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <GridPane layoutX="48.0" layoutY="119.0" prefHeight="480.0" prefWidth="388.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="173.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="215.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="N°tel client" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="114.0" text="N°CNI du client" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Nom du client">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="N° Ticket" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Date d'enregistrement" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="dateEnreg" defaultColor="#3bceb3" editable="false" prefHeight="25.0" prefWidth="216.0" promptText="Date d'enregistrement" styleClass="time" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label text="Heure de depart" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="numtick" focusColor="#3bceb3" labelFloat="true" promptText="Entrez le numero du ticket" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXTextField fx:id="ncnicli" focusColor="#3bceb3" labelFloat="true" promptText="Entrez le numero de cni du client" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="ntelcli" focusColor="#3bceb3" labelFloat="true" prefHeight="25.0" prefWidth="218.0" promptText="Numero de telephone du client" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="Ncli" focusColor="#3bceb3" labelFloat="true" prefHeight="16.0" prefWidth="135.0" promptText="Entrez le nom du client" styleClass="text" unFocusColor="BLACK" GridPane.columnIndex="1" />
+            <Label text="N° Bus" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="bus" focusColor="#3bceb3" labelFloat="true" promptText="Entrez le numero du Bus" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="Categorie" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="227.0" text="Destination" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="destination" focusColor="#3bceb3" prefHeight="25.0" prefWidth="233.0" promptText="Veuillez choisir une destination" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="prix du ticket" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="179.0" text="Nombre de places" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="218.0" text="Nombre de bagages" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <NumberValidator GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <JFXComboBox fx:id="cat" focusColor="#3bceb3" onAction="#cap" prefHeight="25.0" prefWidth="232.0" promptText="Selectionnez la categorie" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <JFXTextField fx:id="prix" editable="false" focusColor="#3bceb3" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <JFXComboBox fx:id="numplc" focusColor="#3bceb3" prefHeight="25.0" prefWidth="224.0" promptText="Selectionnez le nombre de places" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <JFXComboBox fx:id="numbg" focusColor="#3bceb3" prefHeight="25.0" prefWidth="222.0" promptText="Selectionnez le nombre de bagages" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <JFXTimePicker fx:id="Hdep" defaultColor="#3bceb3" prefHeight="25.0" prefWidth="243.0" styleClass="time" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

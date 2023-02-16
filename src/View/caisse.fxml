@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1052.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/Acceuil.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.caisse">
+   <children>
+      <JFXListView fx:id="listview" layoutX="13.0" layoutY="29.0" prefHeight="563.0" prefWidth="442.0" showTooltip="true" style="-fx-border-color: #ba68c8; -fx-border-width: 3;" />
+      <AnchorPane layoutX="592.0" layoutY="115.0" prefHeight="513.0" prefWidth="424.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <GridPane layoutX="16.0" layoutY="119.0" prefHeight="379.0" prefWidth="373.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="148.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="224.6666259765625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Nom">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="nom" focusColor="#ba68c8" labelFloat="true" promptText="Entrez le nom" unFocusColor="BLACK" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="image" focusColor="#ba68c8" labelFloat="true" layoutX="209.0" layoutY="94.0" onMouseClicked="#image" promptText="choisisez l'image" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <JFXTextField fx:id="salaire" focusColor="#ba68c8" labelFloat="true" layoutX="209.0" layoutY="25.0" promptText="Entrez le salaire" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <JFXTextField fx:id="numt" focusColor="#ba68c8" labelFloat="true" layoutX="209.0" layoutY="15.0" promptText="Entrez le numero de Telephone" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="cni" focusColor="#ba68c8" labelFloat="true" layoutX="209.0" layoutY="50.0" promptText="Entrez le numero de cni" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="adresse" focusColor="#ba68c8" labelFloat="true" layoutX="158.0" layoutY="85.0" promptText="Entrez l'adresse" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="mail" focusColor="#ba68c8" labelFloat="true" layoutX="158.0" layoutY="120.0" promptText="Entrez l'adresse mail" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="N°Telephone" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="55.0" text="N°CNI" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="90.0" text="Adresse" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="125.0" text="Mail" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="160.0" text="poste" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="194.0" text="Salaire" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="228.0" text="Sexe" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="262.0" text="Image" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="sexe" focusColor="#ba68c8" labelFloat="true" prefHeight="25.0" prefWidth="231.0" promptText="Choisisez le sexe" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <JFXComboBox fx:id="poste" focusColor="#ba68c8" labelFloat="true" layoutX="158.0" layoutY="314.0" prefHeight="25.0" prefWidth="231.0" promptText="Choisisez le poste" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Pane layoutX="-1.0" layoutY="-39.0" prefHeight="112.0" prefWidth="114.0" style="-fx-background-color: #f4f4f4;" styleClass="pann" AnchorPane.leftAnchor="0.0" />
+            <Pane layoutX="312.0" layoutY="-42.0" prefHeight="103.0" prefWidth="112.0" style="-fx-background-color: #f4f4f4;" styleClass="pan" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="704.0" layoutY="3.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-radius: 99; -fx-background-radius: 99; -fx-background-color: #ffffff;" />
+      <Circle fx:id="photo" fill="DODGERBLUE" layoutX="804.0" layoutY="100.0" radius="91.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <GridPane layoutX="21.0" layoutY="614.0" prefHeight="30.0" prefWidth="435.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="ajouter" onAction="#Ajouter" prefHeight="36.0" prefWidth="100.0" text="Ajouter" />
+            <JFXButton fx:id="modifier" layoutX="10.0" layoutY="10.0" onAction="#Modifier" prefHeight="36.0" prefWidth="100.0" text="Modifier" GridPane.columnIndex="1" />
+            <JFXButton fx:id="supprimer" layoutX="119.0" layoutY="10.0" onAction="#Supprimer" prefHeight="36.0" prefWidth="100.0" text="Supprimer" GridPane.columnIndex="2" />
+            <JFXButton fx:id="actualiser" layoutX="119.0" layoutY="10.0" onAction="#Actualiser" prefHeight="36.0" prefWidth="100.0" text="Ajouter" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

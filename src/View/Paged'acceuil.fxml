@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1216.0" stylesheets="@../CSS/Acceuil.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilController">
+   <children>
+      <BorderPane layoutX="172.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" styleClass="dip" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="69.0" prefWidth="942.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="26.0" prefHeight="21.0" prefWidth="37.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="28.0" prefHeight="21.0" prefWidth="47.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="448.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNITED EXPRESS VOYAGE">
+                     <font>
+                        <Font name="Mistral" size="38.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="803.0" layoutY="4.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/images%20java/bus_48px.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="484.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox focusTraversable="true" layoutX="24.0" layoutY="136.0" prefHeight="405.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton id="active" fx:id="gestiontickets" onAction="#TICKETS" prefHeight="59.0" prefWidth="200.0" styleClass="but" stylesheets="@../CSS/Acceuil.css" text="Gestion Tickets" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/ticket_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="gestionvehicules" layoutX="10.0" layoutY="10.0" onAction="#VEHICULES" prefHeight="59.0" prefWidth="200.0" styleClass="but" text="Gestion Vehicules" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/bus_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="gestionchauffeurs" layoutX="10.0" layoutY="69.0" onAction="#CHAUFFEUR" prefHeight="59.0" prefWidth="200.0" text="Gestion Chauffeurs" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/driver_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="gestionitineraires" layoutX="10.0" layoutY="128.0" onAction="#ITINERAIRE" prefHeight="59.0" prefWidth="200.0" text="Gestion Itineraires" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/marker_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="gestionpersonel" layoutX="10.0" layoutY="187.0" onAction="#PERSONNEL" prefHeight="59.0" prefWidth="200.0" text="Gestion Personnel" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="35.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/people_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="parametre" layoutX="10.0" layoutY="246.0" onAction="#PARAMETRES" prefHeight="63.0" prefWidth="200.0" text="Parametres" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/settings_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deconnexion" layoutX="10.0" layoutY="305.0" onAction="#DECONNEXION" prefHeight="65.0" prefWidth="200.0" text="Deconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView disable="true" fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/images%20java/exit_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="30.0" fitWidth="21.0" layoutX="44.0" layoutY="31.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/images%20java/menu_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="79.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="1016.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTabPane fx:id="tabvehicule" prefHeight="484.0" prefWidth="1016.0" rotateGraphic="true">
+                     <tabs>
+                        <Tab style="-fx-background-color: royalblue;" text="    Vehicules    ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="734.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: royalblue;" text="    Liste Vehicules     ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: royalblue;" text="   Vehicules en circulation    ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="749.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: royalblue;" text="    Etat des Vehicules    ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                  <JFXTabPane fx:id="tabchauffeur" prefHeight="484.0" prefWidth="1016.0" rotateGraphic="true">
+                     <tabs>
+                        <Tab style="-fx-background-color: #5842E1;" text="            Chauffeurs            ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="734.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #5842E1;" text="         Liste Chauffereurs         ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #5842E1;" text="           Chauffeurs Disponible          ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="749.0" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                  <AnchorPane fx:id="acceuil" prefHeight="484.0" prefWidth="1016.0">
+                     <children>
+                        <Text layoutX="207.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNITED EXPRESS VOYAGE">
+                           <font>
+                              <Font name="Mistral" size="38.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="90.0" layoutY="143.0" text="Ceci est une application qui a pour but  la gestion de UNITED EXPRESS">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="98.0" layoutY="181.0" text="elle gere la vente des tickets, les vehicules de l'agence, les ">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="219.0" prefHeight="23.0" prefWidth="557.0" text="conductuers/chauffeurs des differents bus, le personnel de l'agence.  ">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="259.0" prefHeight="23.0" prefWidth="610.0" text="Cette application permettra à l'agence de pouvoir mieux servir ces clients et">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="301.0" prefHeight="23.0" prefWidth="342.0" text="ameliorer les performance de l'agence.">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="personnel" prefHeight="484.0" prefWidth="1016.0">
+                     <children>
+                        <TableView layoutX="29.0" layoutY="113.0" prefHeight="357.0" prefWidth="963.0">
+                          <columns>
+                            <TableColumn prefWidth="99.0" style="-fx-background-color: #5842E1;" text="Nom" />
+                            <TableColumn prefWidth="95.0" style="-fx-background-color: #5842E1;" text="Prenom" />
+                              <TableColumn prefWidth="76.0" style="-fx-background-color: #5842E1;" text="Age" />
+                              <TableColumn prefWidth="69.0" style="-fx-background-color: #5842E1;" text="Sexe" />
+                              <TableColumn prefWidth="86.0" style="-fx-background-color: #5842E1;" text="Telephone" />
+                              <TableColumn prefWidth="92.0" style="-fx-background-color: #5842E1;" text="Adresse" />
+                              <TableColumn prefWidth="81.0" style="-fx-background-color: #5842E1;" text="Poste" />
+                              <TableColumn prefWidth="79.0" style="-fx-background-color: #5842E1;" text="Salaire" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="ajout" buttonType="RAISED" layoutX="29.0" layoutY="30.0" onAction="#add" prefHeight="57.0" prefWidth="120.0" styleClass="dip" text="             Ajouter" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView disable="true" layoutX="29.0" layoutY="33.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images%20java/plus_50px.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="afficher" buttonType="RAISED" layoutX="181.0" layoutY="30.0" onAction="#Afficher" prefHeight="57.0" prefWidth="120.0" styleClass="dip" text="       Actualiser" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <ImageView disable="true" fitHeight="48.0" fitWidth="43.0" layoutX="181.0" layoutY="37.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images%20java/refresh_50px.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="rec" buttonType="RAISED" layoutX="603.0" layoutY="44.0" onAction="#rechercher" prefHeight="40.0" prefWidth="120.0" styleClass="dip" text="          Rechercher" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <TextField fx:id="numticket" layoutX="388.0" layoutY="37.0" prefHeight="25.0" prefWidth="199.0" promptText="            Recherche" style="-fx-background-radius: 100;" />
+                        <ComboBox fx:id="comb" layoutX="388.0" layoutY="73.0" prefHeight="25.0" prefWidth="199.0" promptText="Rechercher par" style="-fx-background-radius: 100;" />
+                        <ImageView disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="603.0" layoutY="44.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images%20java/search_50px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView disable="true" fitHeight="19.0" fitWidth="23.0" focusTraversable="true" layoutX="559.0" layoutY="40.0" opacity="0.3" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Pictures/images%20java/search_32px.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="DISAPPEAR" />
+                           </cursor>
+                        </ImageView>
+                        <HBox fx:id="cachee" layoutX="987.0" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #5842E1;" />
+                     </children>
+                  </AnchorPane>
+                  <JFXTabPane fx:id="tabticket" prefHeight="505.0" prefWidth="1016.0" stylesheets="@../CSS/Acceuil.css">
+                     <tabs>
+                        <Tab style="-fx-background-color: #5007A7;" text="                       Tickets                         ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="734.0">
+                                 <children>
+                                    <TableView fx:id="tabTick" layoutX="16.0" layoutY="75.0" prefHeight="343.0" prefWidth="985.0">
+                                       <columns>
+                                          <TableColumn fx:id="Nom" prefWidth="75.0" text="Nom " />
+                                          <TableColumn fx:id="tel" prefWidth="75.0" text="N°Tel" />
+                                          <TableColumn fx:id="CNI" prefWidth="75.0" text="N°CNI" />
+                                          <TableColumn fx:id="prix" prefWidth="61.0" text="Prix" />
+                                          <TableColumn fx:id="numt" prefWidth="73.0" text="N°Ticket" />
+                                          <TableColumn fx:id="categorie" prefWidth="74.0" text="Categorie" />
+                                          <TableColumn fx:id="destination" prefWidth="74.0" text="Destination" />
+                                          <TableColumn fx:id="numbus" prefWidth="67.0" text="N°Bus" />
+                                          <TableColumn fx:id="dateE" prefWidth="134.0" text="Date enregistrement" />
+                                          <TableColumn fx:id="Hdep" prefWidth="88.0" text="Heure  depart" />
+                                          <TableColumn fx:id="bagages" prefWidth="88.0" text="N°Bagage" />
+                                          <TableColumn fx:id="Action" prefWidth="101.0" text="Action" />
+                                       </columns>
+                                    </TableView>
+                                    <JFXButton fx:id="rec1" buttonType="RAISED" layoutX="842.0" layoutY="27.0" onAction="#rechercher" prefHeight="40.0" prefWidth="120.0" styleClass="dip" text="          Rechercher" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <TextField fx:id="numticket1" layoutX="622.0" layoutY="15.0" prefHeight="25.0" prefWidth="199.0" promptText="            Recherche" style="-fx-background-radius: 100;" />
+                                    <ComboBox fx:id="comb1" layoutX="622.0" layoutY="41.0" prefHeight="25.0" prefWidth="199.0" promptText="Rechercher par" style="-fx-background-radius: 100;" />
+                                    <ImageView disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="842.0" layoutY="27.0" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../Pictures/images%20java/search_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView disable="true" fitHeight="19.0" fitWidth="23.0" focusTraversable="true" layoutX="795.0" layoutY="18.0" opacity="0.3" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../Pictures/images%20java/search_32px.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                    </ImageView>
+                                    <JFXButton fx:id="ajout1" buttonType="RAISED" layoutX="101.0" layoutY="12.0" onAction="#add" prefHeight="57.0" prefWidth="120.0" styleClass="dip" text="             Ajouter" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXButton fx:id="afficher1" buttonType="RAISED" layoutX="321.0" layoutY="13.0" onAction="#Afficher" prefHeight="57.0" prefWidth="120.0" styleClass="dip" text="       Actualiser" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <ImageView disable="true" layoutX="101.0" layoutY="17.0" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../Pictures/images%20java/plus_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView disable="true" layoutX="321.0" layoutY="17.0" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../Pictures/images%20java/refresh_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #5007A7;" text="                            Liste Tickets Vendus                            ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXListView layoutX="272.0" layoutY="24.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #5007A7;" text="                         Ventes                          ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane layoutY="-1.0" prefHeight="505.0" prefWidth="1016.0">
+                                       <content>
+                                          <AnchorPane prefHeight="1500.0" prefWidth="997.0">
+                                             <children>
+                                                <Text layoutX="337.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventes Journalieres">
+                                                   <font>
+                                                      <Font name="Mistral" size="48.0" />
+                                                   </font>
+                                                </Text>
+                                                <LineChart fx:id="journalieres" layoutX="191.0" layoutY="62.0" prefHeight="400.0" prefWidth="543.0">
+                                                   <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                   </xAxis>
+                                                   <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                   </yAxis>
+                                                </LineChart>
+                                                <Text layoutX="337.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventes Mensuelles">
+                                                   <font>
+                                                      <Font name="Mistral" size="48.0" />
+                                                   </font>
+                                                </Text>
+                                                <LineChart fx:id="mensuelles" layoutX="221.0" layoutY="534.0">
+                                                   <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                   </xAxis>
+                                                   <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                   </yAxis>
+                                                </LineChart>
+                                                <Text layoutX="350.0" layoutY="970.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventes Annuelles">
+                                                   <font>
+                                                      <Font name="Mistral" size="48.0" />
+                                                   </font>
+                                                </Text>
+                                                <LineChart fx:id="Annuelles" layoutX="234.0" layoutY="1028.0">
+                                                   <xAxis>
+                                                      <CategoryAxis side="BOTTOM" />
+                                                   </xAxis>
+                                                   <yAxis>
+                                                      <NumberAxis side="LEFT" />
+                                                   </yAxis>
+                                                </LineChart>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

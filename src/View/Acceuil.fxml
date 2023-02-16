@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1369.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane fx:id="menu" prefHeight="692.0" prefWidth="324.0" style="-fx-background-color: #ba68c8;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="info" layoutX="2.0" layoutY="63.0" prefHeight="68.0" prefWidth="320.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-radius: 20;" styleClass="org">
+                     <children>
+                        <Label fx:id="nomutilisateur" alignment="CENTER" layoutY="23.0" prefHeight="27.0" prefWidth="249.0" text="Name" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Circle fx:id="account" fill="#ba68c8" layoutX="286.0" layoutY="36.0" radius="34.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <VBox focusTraversable="true" layoutX="43.0" layoutY="138.0" prefHeight="572.0" prefWidth="324.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="138.0">
+                     <children>
+                        <JFXButton fx:id="home" onAction="#home" prefHeight="79.0" prefWidth="325.0" styleClass="but" text="ACCEUIL" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="icon21" disable="true" fill="WHITE" glyphName="HOME" size="48" styleClass="ico" translateX="-15.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="Tickets" onAction="#tickets" prefHeight="79.0" prefWidth="325.0" styleClass="but" text="TICKETS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="icon2" disable="true" fill="WHITE" glyphName="TICKET" size="48" styleClass="ico" translateX="-15.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="Vehicule" layoutX="10.0" layoutY="10.0" onAction="#vehicule" prefHeight="79.0" prefWidth="324.0" styleClass="but" text="VEHICULES" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="icon3" disable="true" fill="WHITE" glyphName="BUS" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="personnel" layoutX="10.0" layoutY="89.0" onAction="#personnel" prefHeight="79.0" prefWidth="327.0" styleClass="but" text="PERSONNEL" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="icon4" disable="true" fill="WHITE" glyphName="GROUP" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="expedition" layoutX="10.0" layoutY="168.0" onAction="#Expedition" prefHeight="79.0" prefWidth="324.0" styleClass="but" text="EXPEDITION" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="icon5" disable="true" fill="WHITE" glyphName="PAPER_PLANE_ALT" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="Itineraires" layoutX="10.0" layoutY="247.0" onAction="#itineraires" prefHeight="79.0" prefWidth="341.0" styleClass="but" text="ITINERAIRES" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="icon6" disable="true" fill="WHITE" glyphName="MAP_MARKER_RADIUS" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="finances" layoutX="10.0" layoutY="340.0" onAction="#Finances" prefHeight="79.0" prefWidth="341.0" styleClass="but" text="FINANCES" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fx:id="icon61" disable="true" fill="WHITE" glyphName="MAP_MARKER_RADIUS" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="parametres" layoutX="10.0" layoutY="326.0" onAction="#parametres" prefHeight="79.0" prefWidth="336.0" styleClass="but" text="PARAMETRES" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fx:id="icon7" disable="true" fill="WHITE" glyphName="GEARS" size="48" styleClass="ico" translateX="-10.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deconnexion" layoutX="10.0" layoutY="405.0" onAction="#deconnexion" prefHeight="79.0" prefWidth="326.0" styleClass="but" text="DECONNEXION" textFill="WHITE" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fx:id="icon8" disable="true" fill="WHITE" glyphName="SIGN_OUT" size="48" styleClass="ico" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <Label fx:id="titre" layoutX="17.0" layoutY="11.0" text="UNITED EXPRESS VOYAGE" textFill="WHITE">
+                     <font>
+                        <Font name="Mistral" size="28.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="262.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../../../../Pictures/images%20java/bus_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="main" prefHeight="712.0" prefWidth="1052.0" styleClass="anc" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane disable="true" layoutX="89.0" layoutY="-26.0" prefHeight="144.0" prefWidth="144.0" rotate="45.0" styleClass="org" />
+                  <Pane disable="true" layoutX="371.0" layoutY="197.0" prefHeight="250.0" prefWidth="250.0" rotate="-45.0" styleClass="org">
+                     <children>
+                        <Pane layoutX="15.0" layoutY="15.0" prefHeight="222.0" prefWidth="222.0" styleClass="yel">
+                           <children>
+                              <Pane layoutX="27.0" layoutY="29.0" prefHeight="170.0" prefWidth="170.0" styleClass="org" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane disable="true" layoutX="375.0" layoutY="198.0" prefHeight="250.0" prefWidth="250.0" styleClass="org">
+                     <children>
+                        <Pane layoutX="15.0" layoutY="15.0" prefHeight="222.0" prefWidth="222.0" styleClass="yel">
+                           <children>
+                              <Pane layoutX="27.0" layoutY="29.0" prefHeight="170.0" prefWidth="170.0" styleClass="org" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane disable="true" layoutX="816.0" layoutY="530.0" prefHeight="150.0" prefWidth="150.0" rotate="45.0" styleClass="org" />
+                  <AnchorPane fx:id="root" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

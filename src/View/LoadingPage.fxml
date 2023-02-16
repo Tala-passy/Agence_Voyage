@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1376.0" style="-fx-background-color: #FAC038;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Loadingpage">
+   <children>
+      <AnchorPane fx:id="layer" layoutX="-92.0" layoutY="481.0" prefHeight="94.0" prefWidth="1457.0" AnchorPane.leftAnchor="-92.0">
+         <children>
+            <AnchorPane fx:id="load" layoutX="10.0" layoutY="13.0" prefHeight="65.0" prefWidth="95.0">
+               <children>
+                  <ImageView layoutX="29.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT">
+                     <image>
+                        <Image url="@../../../../Pictures/images%20java/bus_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="614.0" layoutY="355.0" text="LOADING . . .">
+         <font>
+            <Font name="Mistral" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="209.0" text="UNITED EXPRESS">
+         <font>
+            <Font name="Mistral" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

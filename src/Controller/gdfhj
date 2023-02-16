@@ -1,0 +1,359 @@
+parametres.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	parametres.isHover()==true) {
+					parametres.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					parametres.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Tickets.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Tickets.isHover()==true) {
+					Tickets.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Tickets.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		expedition.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	expedition.isHover()==true) {
+					expedition.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					expedition.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Itineraires.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Itineraires.isHover()==true) {
+					Itineraires.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Itineraires.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Vehicule.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Vehicule.isHover()==true) {
+					Vehicule.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Vehicule.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		personnel.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	personnel.isHover()==true) {
+					personnel.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					personnel.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		deconnexion.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	deconnexion.isHover()==true) {
+					deconnexion.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:blue;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					deconnexion.setStyle("-fx-text-fill:white;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		theme.setText("Light Theme");
+		theme.setStyle("-fx-text-fill:white;"
+			
+				);
+		parametres.setStyle("-fx-background-color:blue");
+		parametres.setStyle("-fx-text-fill:white;"+"-fx-background-color:blue");
+		Tickets.setStyle("-fx-text-fill:white");
+	    Itineraires.setStyle("-fx-text-fill:white");
+	    Vehicule.setStyle("-fx-text-fill:white");
+	    personnel.setStyle("-fx-text-fill:white");
+	    expedition.setStyle("-fx-text-fill:white");
+	    deconnexion.setStyle("-fx-text-fill:white");
+		main.setStyle( " -fx-background-color:#060606");
+		menu.setStyle("-fx-background-color:linear-gradient(to bottom,#080808,#080808,#080808,blue)");
+sq1.setStyle("-fx-background-color:blue");
+sq2.setStyle("-fx-background-color:blue");
+sq3.setStyle("-fx-background-color:blue");
+sq4.setStyle("-fx-background-color:blue");
+sq5.setStyle("-fx-background-color:blue");
+s1.setStyle("-fx-background-color:#060606");
+s2.setStyle("-fx-background-color:#060606");
+info.setStyle("-fx-background-color:blue;"+"-fx-background-radius:20;"+"-fx-border-radius=20");
+titre.setStyle("-fx-text-fill:white");
+account.setStyle("-fx-fill:white");
+icon1.setStyle("-fx-fill:blue");
+icon2.setStyle("-fx-fill:white");
+icon3.setStyle("-fx-fill:white");
+icon4.setStyle("-fx-fill:white");
+icon5.setStyle("-fx-fill:white");
+icon6.setStyle("-fx-fill:white");
+icon7.setStyle("-fx-fill:white");
+icon8.setStyle("-fx-fill:white");
+gestionticketicon.setStyle("-fx-fill:white");
+ventesticketicon.setStyle("-fx-fill:white");
+gestionticket.setStyle("-fx-border-color:white;"+"-fx-background-radius:10;"+"-fx-border-radius:10;"+"-fx-border-width:3;"+"-fx-text-fill:white");
+ventesticket.setStyle("-fx-border-color:white;"+"-fx-background-radius:10;"+"-fx-border-radius:10;"+"-fx-border-width:3;"+"-fx-text-fill:white");
+
+	}else {
+		parametres.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	parametres.isHover()==true) {
+					parametres.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					parametres.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Tickets.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Tickets.isHover()==true) {
+					Tickets.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Tickets.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		expedition.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	expedition.isHover()==true) {
+					expedition.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					expedition.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Itineraires.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Itineraires.isHover()==true) {
+					Itineraires.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Itineraires.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		Vehicule.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	Vehicule.isHover()==true) {
+					Vehicule.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					Vehicule.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		personnel.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	personnel.isHover()==true) {
+					personnel.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					personnel.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+		deconnexion.hoverProperty().addListener(new ChangeListener<Boolean>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+				// TODO Auto-generated method stub
+				if(	deconnexion.isHover()==true) {
+					deconnexion.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:#ff9900;"
+							+"-fx-focus-traversable:true ;");
+									}else {
+					deconnexion.setStyle("-fx-text-fill:black;"
+							+"-fx-background-color:transparent;"
+							+"-fx-focus-traversable:true ;"	);
+				}
+			}
+			
+		});
+
+		theme.setText("Dark Theme");
+		theme.setStyle("-fx-text-fill:black");
+		parametres.setStyle("-fx-background-color:#ff9900");
+		parametres.setStyle("-fx-text-fill:black;"+"-fx-background-color:#ff9900");
+		Tickets.setStyle("-fx-text-fill:black");
+	    Itineraires.setStyle("-fx-text-fill:black");
+	    Vehicule.setStyle("-fx-text-fill:black");
+	    personnel.setStyle("-fx-text-fill:black");
+	    expedition.setStyle("-fx-text-fill:black");
+	    deconnexion.setStyle("-fx-text-fill:black");
+		main.setStyle( " -fx-background-color: #fcee5c"
+		                          );
+		menu.setStyle("-fx-background-color:#FFF47F");
+		sq1.setStyle("-fx-background-color:#ff9900");
+		sq2.setStyle("-fx-background-color:#ff9900");
+		sq3.setStyle("-fx-background-color:#ff9900");
+		sq4.setStyle("-fx-background-color:#ff9900");
+		sq5.setStyle("-fx-background-color:#ff9900");
+		s1.setStyle("-fx-background-color:#fcee5c");
+		s2.setStyle("-fx-background-color:#fcee5c");
+info.setStyle("-fx-background-color:#ff9900;"+"-fx-background-radius:20;"+"-fx-border-radius=20");
+account.setStyle("-fx-fill:black");
+titre.setStyle("-fx-text-fill:black");
+icon1.setStyle("-fx-fill:#ff9900");
+icon2.setStyle("-fx-fill:black");
+icon3.setStyle("-fx-fill:black");
+icon4.setStyle("-fx-fill:black");
+icon5.setStyle("-fx-fill:black");
+icon6.setStyle("-fx-fill:black");
+icon7.setStyle("-fx-fill:black");
+icon8.setStyle("-fx-fill:black");
+gestionticketicon.setStyle("-fx-fill:black");
+ventesticketicon.setStyle("-fx-fill:black");
+gestionticket.setStyle("-fx-border-color:black;"+"-fx-background-radius:10;"+"-fx-border-radius:10;"+"-fx-border-width:3;"+"-fx-text-fill:black");
+ventesticket.setStyle("-fx-border-color:black;"+"-fx-background-radius:10;"+"-fx-border-radius:10;"+"-fx-border-width:3;"+"-fx-text-fill:black");
+
+	}
+}});
+
+
+
+
+
+
+/// database sql syntaxes
+create table client(numtick int not null AUTO_INCREMENT primary key,
+                    nomcli text not null,
+                    numtelcli varchar(20) not null,
+                    numcnicli varchar(20) not null,
+                    prixtick double not null,
+                    dateEnreg date not null,
+                    HeureDep varchar(10) not null,
+                    Categorie text not null,
+                    destination text not null,
+                    numbagages int ,
+                    numbus int,
+
+
+
+create table itineraire(iditi int AUTO_INCREMENT primary key,
+                        nom text);
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
